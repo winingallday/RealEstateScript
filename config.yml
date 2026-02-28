@@ -1,0 +1,48 @@
+# config.yml
+buy_box:
+  markets: ["Sacramento, CA", "Citrus Heights, CA", "Roseville, CA"]
+  min_beds: 3
+  max_price: 650000
+  min_sqft: 1100
+  property_types: ["single_family", "townhouse", "duplex"]
+  max_year_built: 2015          # optional ceiling (newer than)
+  min_lot_sqft: 3500            # optional
+
+manual_check_rules:
+  near_cap_target_bps: 50       # within ±0.50% of target cap => manual check
+  near_coc_target_bps: 100      # within ±1.00% of target CoC => manual check
+  rent_confidence_threshold: 0.6
+  missing_fields_trigger: true  # if key fields missing -> manual check
+
+underwriting:
+  purchase_costs_pct: 0.02      # closing costs (buyer)
+  rehab_budget: 15000           # flat (set 0 if not using)
+  down_payment_pct: 0.20
+  interest_rate_annual: 0.065
+  loan_term_years: 30
+  pmi_applies_under_dp_pct: 0.20
+  pmi_monthly_pct_of_loan: 0.0004  # if PMI applies, monthly % of loan
+  annual_property_tax_rate: 0.012  # 1.2%
+  annual_insurance_rate: 0.004     # 0.4% of purchase price (rough)
+  monthly_hoa: 0
+  vacancy_rate: 0.05
+  maintenance_rate: 0.07          # of rent
+  management_rate: 0.08           # of rent
+  capex_rate: 0.05                # of rent
+
+targets:
+  min_cap_rate: 0.06
+  min_cash_on_cash: 0.10
+  min_dscr: 1.20
+
+rent_estimation:
+  strategy_order: ["manual_override", "rule_of_thumb", "rent_to_price"]
+  manual_overrides: {}            # e.g., "123 Main St, Sacramento, CA": 2650
+  rule_of_thumb_per_bed:          # fallback heuristic
+    "2": 2000
+    "3": 2400
+    "4": 2800
+  rent_to_price_ratio: 0.006      # 0.6% of purchase price/month (adjust per market)
+
+outputs:
+  top_n: 25

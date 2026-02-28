@@ -1,0 +1,4 @@
+address,city,state,price,beds,baths,sqft,lot_sqft,year_built,property_type,latitude,longitude,hoa_monthly,taxes_annual
+123 Main St,Sacramento,CA,525000,3,2,1320,4500,1988,single_family,38.58,-121.49,0,6000
+456 Oak Ave,Roseville,CA,635000,4,2.5,1850,5200,1996,single_family,38.75,-121.28,55,7200
+789 Pine Ct,Citrus Heights,CA,399000,2,1,980,3000,1972,townhouse,38.68,-121.29,0,4800
