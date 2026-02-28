@@ -1,4 +1,0 @@
-address,city,state,price,beds,baths,sqft,property_type,est_rent,rent_method,rent_confidence,cap_rate,cash_on_cash,dscr,annual_noi,annual_cash_flow,total_cash_in,in_buy_box,meets_targets,manual_check,manual_reasons
-789 Pine Ct,Citrus Heights,CA,399000.0,2,1.0,980,townhouse,2000.0,rule_of_thumb_per_bed,0.6,0.0291,-0.1227,0.479,11604.0,-12607.0,102780.0,False,False,False,
-123 Main St,Sacramento,CA,525000.0,3,2.0,1320,single_family,2400.0,rule_of_thumb_per_bed,0.6,0.0257,-0.1407,0.424,13500.0,-18356.0,130500.0,True,False,False,
-456 Oak Ave,Roseville,CA,635000.0,4,2.5,1850,single_family,2800.0,rule_of_thumb_per_bed,0.6,0.0233,-0.1534,0.384,14800.0,-23731.0,154700.0,True,False,False,
